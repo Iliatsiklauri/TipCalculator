@@ -10,15 +10,48 @@
     <img src="./assets/SPLITTERtitle.svg" alt="title" />
 
     <main>
+      <label for="total_bill">Bill</label>
       <header>
-        <label for="total_bill">Bill</label>
         <div id="total_bill" class="total_bill">
           <img src="./assets/$.svg" alt="$" />
-          <h1>0</h1>
+          <!-- input 1 -->
+          <input class="input" type="number" placeholder="0" />
         </div>
-        <div class="tip_selector"></div>
+        <label for="grid">Select Tip %</label>
+        <div id="grid" class="grid-container">
+          <grid class="box box1">5%</grid>
+          <grid class="box box2">10%</grid>
+          <grid class="box box3">15%</grid>
+          <grid class="box box4">25%</grid>
+          <grid class="box box5">50%</grid>
+          <grid class="box box6">Custom</grid>
+        </div>
+        <label for="num_of_people">Number of People</label>
+        <div id="num_of_people" class="num_of_people">
+          <img src="./assets/Group 8 (1).svg" alt="people" />
+          <!-- input 2 -->
+          <input class="input2" type="number" placeholder="0" />
+        </div>
       </header>
-      <footer></footer>
+      <footer>
+        <div class="container">
+          <div class="tip">
+            <div class="amount">
+              <h1>Tip Amount</h1>
+              <p>&#47; person</p>
+            </div>
+            <div class="per_tip">$0.00</div>
+          </div>
+          <div class="total">
+            <div class="tot">
+              <h1>Total</h1>
+              <p>&#47; person</p>
+            </div>
+            <div class="per_total">$0.00</div>
+          </div>
+        </div>
+        <div class="reset_btn"><h1>reset</h1></div>
+      </footer>
     </main>
 
     <script src="./main.js"></script>
